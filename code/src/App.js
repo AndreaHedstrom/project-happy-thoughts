@@ -67,12 +67,10 @@ export const App = () => {
           onFormSubmit={onFormSubmit} />
       </div>
       <div className="all-messages">
-        {thoughts.length > 0 && (
-          <AllThoughts
-            loading={loading}
-            thoughts={thoughts}
-            onLikesIncrease={onLikesIncrease} />
-        )}
+        <AllThoughts
+          loading={loading}
+          thoughts={thoughts}
+          onLikesIncrease={onLikesIncrease} />
       </div>
     </div>
   )
