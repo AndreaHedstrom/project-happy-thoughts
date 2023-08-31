@@ -3,6 +3,7 @@ import React from 'react';
 import { formatDistance } from 'date-fns';
 
 export const AllThoughts = ({ thoughts, onLikesIncrease, loading }) => {
+  console.log('thoughts:', thoughts);
   if (loading) {
     return <div className="Loading">Loading...</div>
   }
