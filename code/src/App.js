@@ -59,12 +59,14 @@ export const App = () => {
   }
 
   return (
-    <div className="mainContainer">
-      <div className="thoughts">
+    <div className="main">
+      <div className="new-message">
         <NewThought
           newThought={newThought}
           handleNewThoughtChange={onNewThoughtChange}
           onFormSubmit={onFormSubmit} />
+      </div>
+      <div className="all-messages">
         <AllThoughts
           loading={loading}
           thoughts={thoughts}
